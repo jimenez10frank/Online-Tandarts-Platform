@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 20px;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-info, .additional-info {
+    width: 48%;
+}
+
+.contact-info h2, .additional-info h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-info h3, .additional-info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-info p, .additional-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+}
+
+.email-icon::before, .location-icon::before {
+    content: "\2709";
+    margin-right: 5px;
+}
+
+.bar {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.edit-button {
+    background-color: #FFC107; 
+    color: black;
+    padding: 10px 20px; 
+    display: inline-block; 
+    border-radius: 5px; 
+}
+
+.logout-button {
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+  .logout-button:hover {
+    background-color: #B71C1C;
+}
+

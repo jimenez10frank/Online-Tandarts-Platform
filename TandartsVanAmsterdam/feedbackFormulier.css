@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2d4bf0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px; /* ruimte voor de iconen */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-group i {
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #2d4bf0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn, .back-btn {
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 48%;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    background-color: #2d4bf0;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #1c39c7;
+    transform: scale(1.05);
+}
+
+.submit-btn:active {
+    background-color: #10257b;
+    transform: scale(1);
+}
+
+.back-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.back-btn:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group i {
+    margin-right: 8px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patiëntenprofielbeheer - Tandartspraktijk</title>
+    <link rel="stylesheet" href="ProfielbeheerPatient.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Patiëntenprofielbeheer</h1>
+    </header>
+
+
+    <!-- Persoonlijke Informatie Formulier -->
+    <section class="formulier">
+        <h2>Patiëntinformatie</h2>
+        <form id="patientenForm">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" placeholder="Voornaam" required>
+
+            <label for="achternaam">Achternaam:</label>
+            <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam" required>
+
+            <label for="geboortedatum">Geboortedatum:</label>
+            <input type="date" id="geboortedatum" name="geboortedatum" required>
+
+            <label for="geslacht">Geslacht:</label>
+            <input type="text" id="geslacht" name="geslacht" placeholder="Man/Vrouw/Anders">
+
+            <label for="bsn">BSN-nummer:</label>
+            <input type="text" id="bsn" name="bsn" placeholder="123456789" required>
+
+            <label for="telefoon">Telefoonnummer:</label>
+            <input type="text" id="telefoon" name="telefoon" placeholder="06-12345678">
+
+            <label for="email">E-mailadres:</label>
+            <input type="email" id="email" name="email" placeholder="voorbeeld@domein.nl">
+
+            <label for="adres">Adres:</label>
+            <input type="text" id="adres" name="adres" placeholder="Straatnaam, Plaats, Postcode">
+
+            <!-- Knop om profiel op te slaan -->
+            <input type="submit" value="Profiel Opslaan">
+        </form>
+    </section>
+</div>
+
+<script>
+    // Placeholder JavaScript voor profielbeheer
+    document.getElementById('nieuwProfiel').addEventListener('click', function() {
+        document.getElementById('patientenForm').reset();
+        alert('Nieuw patiëntprofiel aanmaken.');
+    });
+
+    // Voeg functionaliteit toe voor "Bewerken" en "Verwijderen" knoppen (dit zou normaal door backend worden beheerd)
+    let bewerkKnoppen = document.querySelectorAll('.bewerk');
+    let verwijderKnoppen = document.querySelectorAll('.verwijder');
+
+    bewerkKnoppen.forEach(knop => {
+        knop.addEventListener('click', function() {
+            alert('Patiëntprofiel bewerken.');
+            // Hier kun je logica toevoegen om het geselecteerde profiel te bewerken
+        });
+    });
+
+    verwijderKnoppen.forEach(knop => {
+        knop.addEventListener('click', function() {
+            alert('Patiëntprofiel verwijderen.');
+            // Hier kun je logica toevoegen om het geselecteerde profiel te verwijderen
+        });
+    });
+</script>
+
+</body>
+</html>
+
